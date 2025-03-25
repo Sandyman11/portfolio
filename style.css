@@ -1,0 +1,352 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f2f2f2;
+  color: #333;
+  perspective: 1000px;
+  overflow-x: hidden;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  background-color: #2a3d66;
+  border-bottom: 4px solid #1c2a46;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.navs{
+  margin-top: 10px;
+}
+
+.navs a {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: .2s ease;
+}
+
+.navs a:hover {
+  color: black;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Profile Section */
+#profile {
+  padding: 60px 20px;
+  text-align: center;
+  text-decoration: var(solid);
+  animation: slideUp 1s ease-in-out;
+}
+
+#profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2a3d66;
+}
+
+.profile-container {
+  
+  perspective: 1000px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#profile-photo {
+  width: 250px;
+  height: 280px;
+  border-radius: 50%;
+  border: 5px solid #310101;
+  box-shadow: 0 0 15px rgba(41, 33, 33, 0.2);
+  transition: transform 0.4s ease-in-out;
+}
+
+#profile-photo:hover {
+  transform: scale(1.1);
+}
+
+#profile p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+  color: #555;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#profile {
+  background: linear-gradient(45deg, #ff9a9e, #472b24, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+/* Education Section */
+#education {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+#education h2 {
+  font-size: 2.5rem;
+  color: #2a3d66;
+  margin-bottom: 20px;
+}
+
+#education ul {
+  list-style-type: none;
+}
+
+#education li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+#education h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #2a3d66;
+}
+
+#education p {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 300;
+}
+
+
+/* Address Section */
+#address {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+#address h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #2a3d66;
+}
+
+#address p {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 300;
+}
+
+/* Certificates Section */
+#certificates {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+#certificates h2 {
+  font-size: 2.5rem;
+  color: #2a3d66;
+  margin-bottom: 20px;
+}
+
+.certificate-item {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  animation: scaleUp 0.5s ease-in-out;
+}
+
+.certificate-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease-in-out;
+}
+
+.certificate-photo:hover {
+  transform: scale(1.05);
+}
+
+.certificate-item p {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* Resume Section */
+#resume {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+#resume h2 {
+  font-size: 2.5rem;
+  color: #2a3d66;
+  margin-bottom: 20px;
+}
+
+#resume button {
+  padding: 12px 30px;
+  background-color: #2a3d66;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#resume button:hover {
+  transform: scale(1.1);
+  background-color: #1c2a46;
+}
+
+#resume iframe {
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#resume iframe:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #2a3d66;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+footer p {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.contact {
+  position: relative;
+  height: 92vh;
+  background: linear-gradient(45deg, #465109, #3a4203, #053b36, #025a63);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  padding: 60px 20px;
+  text-align: center;
+  }
+
+  .contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+
+  .contact-content h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #010c0b;
+  padding-bottom: 0.5rem;
+  }
+
+  .contact-content .mail {
+  color: #030300;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+  }
+
+  .contact-content .links {
+  color: #080000;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+  }
+
+  .contact-content a {
+  text-decoration: none;
+  color: #000303;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+  }
+
+  .contact-content a:hover {
+  color: #f0f0e6;
+  }
+  
